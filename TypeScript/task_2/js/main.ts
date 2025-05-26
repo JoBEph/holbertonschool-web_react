@@ -61,6 +61,18 @@ function executeWork(employee: Director | Teacher): void {
   console.log(employee.workTeacherTasks());
   }
 }
+function teachClass(todayClass: Subjects): string {
+  switch (todayClass) {
+    case 'Math':
+      return 'Teaching Math';
+    case 'History':
+      return 'Teaching History';
+    default:
+      return 'Unknown subject';
+  }
+}
+type Subjects = 'Math' | 'History';
+
 
 // Test cases
 console.log(createEmployee(200));
@@ -68,3 +80,5 @@ console.log(createEmployee(1000));
 console.log(createEmployee('$500'));
 executeWork(createEmployee(200));
 executeWork(createEmployee(1000));
+teachClass('Math');
+teachClass('History');
