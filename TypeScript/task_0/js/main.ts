@@ -17,6 +17,7 @@ const student2: studentsList = {
     location: "Bordeaux",
 };
 
+
 const studentsList: studentsList[] = [student1, student2];
 
 const table = document.createElement("table");
